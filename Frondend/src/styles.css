@@ -1,0 +1,45 @@
+/* 🌐 Importar la fuente Oswald desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Importar estilos de Leaflet (si los usas) */
+@import "leaflet/dist/leaflet.css";
+@import "leaflet.markercluster/dist/MarkerCluster.css";
+@import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+
+/* 🌍 Estilos globales */
+html, body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* 🔤 Jerarquía tipográfica opcional */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p, span, a, li, button, input {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+/* 🔲 Consistencia general */
+* {
+  box-sizing: border-box;
+}

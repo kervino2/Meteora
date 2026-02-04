@@ -1,0 +1,69 @@
+<div class="pagina-trayectoria">
+  <div class="seccion-contenido">
+
+    <div class="info-simulacion">
+      <h2> Simulación de Impacto de Meteorito</h2>
+      <p>
+        En esta simulación puedes observar el efecto del impacto de un meteorito sobre la superficie.
+        La zona azul representa el área afectada por la onda expansiva y la zona negra el cráter de impacto.
+        Puedes reiniciar la simulación en cualquier momento usando el botón de abajo.
+      </p>
+    </div>
+
+    <div class="contenedor-general">
+      <canvas #canvas></canvas>
+
+      <div class="leyenda-impacto">
+        <h3>Leyenda de simulación</h3>
+        <div class="item">
+          <span class="cuadro azul"></span>
+          <span>Área de onda expansiva</span>
+        </div>
+        <div class="item">
+          <span class="cuadro negro"></span>
+          <span>Cráter de impacto</span>
+        </div>
+      </div>
+
+      <button class="btn-reiniciar" (click)="reiniciarImpacto()">Reiniciar Simulación</button>
+    </div>
+
+    <div class="info-unidades">
+      <h3>Unidades y aproximaciones</h3>
+      <ul>
+        <li><strong>-  Energía:</strong> kilotones de TNT (kt)</li>
+        <li><strong>-  Velocidad:</strong> kilómetros por segundo (km/s)</li>
+        <li><strong>-  Altura:</strong> kilómetros (km)</li>
+        <li><strong>-  Distancias visuales:</strong> escaladas para representación gráfica</li>
+      </ul>
+      <p class="nota">
+        Los valores mostrados corresponden a <strong>aproximaciones físicas</strong>
+        utilizadas con fines educativos y de visualización.
+      </p>
+    </div>
+
+    <div class="info-fuentes">
+      <h3>Origen de la información</h3>
+      <p>
+        Esta simulación utiliza <strong>modelos físicos simplificados</strong> basados en
+        información científica pública. Los valores de energía, velocidad y efectos
+        del impacto se derivan de <strong>aproximaciones comúnmente utilizadas</strong>
+        en divulgación científica.
+      </p>
+      <ul>
+        <li>NASA – Near Earth Object Program</li>
+        <li>NASA – Earth Impact Effects Program</li>
+        <li>Literatura científica sobre impactos meteóricos</li>
+      </ul>
+      <p class="nota">
+        La representación visual ha sido adaptada con fines educativos y no pretende
+        ser una recreación exacta de un evento real.
+      </p>
+    </div>
+    <div class="info-desintegracion">
+      No todos los meteoritos alcanzan la superficie terrestre.
+      Muchos se <strong>desintegran parcial o totalmente</strong> en la atmósfera
+      debido a la fricción y presión, liberando energía sin generar un impacto directo.
+    </div>
+  </div>
+</div>

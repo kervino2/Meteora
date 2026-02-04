@@ -1,0 +1,25 @@
+<div class="meteorito-photo" *ngIf="!loading; else loadingTemplate">
+  <div *ngIf="meteorito; else noMeteorito">
+    <div *ngIf="imageUrl; else noImage">
+      <img [src]="imageUrl" alt="Foto del lugar de impacto" class="photo" (click)="openFullscreen(imageUrl)"/>
+
+      <div class="controls">
+        <button (click)="rotateLeft()">Girar Izquierda</button>
+        <button (click)="rotateRight()">Girar Derecha</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noMeteorito>
+    <p>No se encontró información del meteorito.</p>
+  </ng-template>
+
+  <ng-template #noImage>
+    <p>No hay foto disponible para el lugar.</p>
+  </ng-template>
+
+</div>
+
+<ng-template #loadingTemplate>
+  <p>Cargando foto del meteorito...</p>
+</ng-template>

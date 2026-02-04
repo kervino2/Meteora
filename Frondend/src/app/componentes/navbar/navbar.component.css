@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  backdrop-filter: blur(10px);
+  background-color: rgba(10, 12, 17, 0.9);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  padding: 0.8rem 2.5rem; /* más alto y espaciado horizontal */
+  width: 100%;
+}
+
+/* Contenedor principal */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 🔹 Marca izquierda, links derecha */
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Marca */
+.brand {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #e7ecf5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  letter-spacing: 0.6px;
+}
+
+.brand:hover {
+  color: #8fc7ff;
+}
+
+/* Enlaces (derecha) */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cdd3de;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+  color: #93c9ff;
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #4aa3ff;
+}
+
+/* 🔹 Ajustes responsivos */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+}

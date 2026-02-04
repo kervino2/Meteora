@@ -1,0 +1,47 @@
+<div class="mapa-container">
+  <!-- 🔹 Panel de filtros: solo visible en vista mapa -->
+  <div class="filter-bar" *ngIf="vistaActual === 'mapa'">
+    <button [class.active]="filtroActivo === 'todos'" (click)="aplicarFiltro('todos')">
+      <img src="assets/icons/earth.svg" alt="earth" width="16" height="16"> Todos
+    </button>
+
+    <button [class.active]="filtroActivo === 'impacto'" (click)="aplicarFiltro('impacto')">
+      <img src="assets/icons/bomb.svg" alt="Bomb" width="16" height="16"> Con impacto
+    </button>
+
+    <button [class.active]="filtroActivo === 'fotos'" (click)="aplicarFiltro('fotos')">
+      <img src="assets/icons/camera.svg" alt="camera" width="16" height="16"> Con fotos
+    </button>
+
+    <button [class.active]="filtroActivo === 'interesante'" (click)="aplicarFiltro('interesante')">
+      <img src="assets/icons/sparkle.svg" alt="sparkle" width="16" height="16"> Interesantes
+    </button>
+  </div>
+
+  <!-- 🔹 Indicador de carga -->
+  <div *ngIf="loading" class="loading-overlay">
+    <div class="spinner"></div>
+    <p>Cargando meteoritos...</p>
+  </div>
+
+  <!-- 🔘 Botón volver al mapa: solo visible si no estás en mapa -->
+  <button *ngIf="vistaActual !== 'mapa'" (click)="volverAlMapa()" class="volver-mapa">
+    ← Volver al mapa
+  </button>
+
+  <!-- 🔹 Contenedor del mapa o vistas -->
+  <div class="mapa-view">
+    <app-vs-altura *ngIf="vistaActual === 'vsAltura'"></app-vs-altura>
+    <app-vs-peso *ngIf="vistaActual === 'vsPeso'"></app-vs-peso>
+    <app-vs-trayectoria *ngIf="vistaActual === 'vsTrayectoria'"></app-vs-trayectoria>
+    <div id="map" class="map" [class.oculto]="vistaActual !== 'mapa'"></div>
+  </div>
+
+  <!-- 🔹 Panel lateral -->
+  <app-meteorito-detail *ngIf="vistaActual !== 'inicio' && vistaActual !== 'curiosidades'"></app-meteorito-detail>
+
+  <!-- 🔹 Panel de detalles emergente -->
+  <app-meteorito-detail *ngIf="selectedMeteoritoCompleto" [meteorito]="selectedMeteoritoCompleto"
+    (closed)="cerrarPanel()" class="meteorito-panel">
+  </app-meteorito-detail>
+</div>

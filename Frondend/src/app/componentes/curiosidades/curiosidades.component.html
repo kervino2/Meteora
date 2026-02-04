@@ -1,0 +1,55 @@
+<div class="curiosidades-container">
+  <h1>Curiosidades sobre los Meteoritos</h1>
+
+  <p class="intro">
+    Los meteoritos nos cuentan historias antiguas del Sistema Solar, siendo auténticos mensajeros del espacio profundo.
+    Algunos son tan grandes como autos, otros tan pequeños como un grano de arroz, pero todos han viajado millones de
+    kilómetros a través del vacío cósmico antes de llegar a nuestro planeta. Cada uno de ellos guarda secretos sobre la
+    formación de asteroides, planetas y los elementos que dieron origen a la vida en la Tierra. A continuación,
+    exploraremos algunos de los meteoritos más fascinantes que se han encontrado, descubriendo su origen, composición y
+    las historias que llevan consigo.
+  </p>
+
+  <section>
+    <h2>Meteoritos Más Grandes Encontrados</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let m of meteoritosGrandes">
+        <h3>{{ m.nombre }}</h3>
+
+        <p><strong>Lugar:</strong> {{ m.lugar }}</p>
+        <p><strong>Peso:</strong> {{ m.peso }}</p>
+        <p><strong>Año:</strong> {{ m.year }}</p>
+        <p><strong>Tipo:</strong> {{ m.tipo }}</p>
+        <p>{{ m.descripcion }}</p>
+
+        <button (click)="cargarMeteoritoCompleto(m.nombre, m.year)">Ver en el mapa</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Impactos Históricos y Famosos</h2>
+    <div class="cards">
+      <div class="card" *ngFor="let i of impactosHistoricos">
+        <h3>{{ i.nombre }}</h3>
+
+        <p><strong>Lugar:</strong> {{ i.lugar }}</p>
+        <p><strong>Fecha:</strong> {{ i.fecha }}</p>
+        <p><strong>Energía estimada:</strong> {{ i.energia }}</p>
+        <p>{{ i.efecto }}</p>
+
+        <button (click)="cargarMeteoritoCompleto(i.nombre, i.year)">Ver en el mapa</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="curiosidades">
+  <h2>Cosas interesantes sobre los meteoritos</h2>
+
+  <ul class="curiosidades-lista">
+    <li *ngFor="let c of curiosidades">
+      {{ c }}
+    </li>
+  </ul>
+</section>
+</div>

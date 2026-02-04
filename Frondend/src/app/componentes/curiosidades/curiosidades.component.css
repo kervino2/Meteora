@@ -1,0 +1,187 @@
+/* ======== ESTILOS GENERALES ======== */
+.curiosidades-container {
+  width: 100%;
+  padding: 3rem 2rem; /* más espacio alrededor */
+  color: #f0f0f0;
+  background: #000000; /* negro total */
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center; /* títulos centrados */
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid #374151; /* separador sutil */
+  padding-bottom: 0.5rem;
+}
+
+/* ======== SECCIONES ======== */
+section {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #111111; /* separación entre secciones */
+}
+
+/* ======== TARJETAS ======== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  justify-content: center; /* centra las tarjetas */
+  max-width: 1200px; /* ancho máximo para 4 tarjetas por fila */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr); /* máximo 4 tarjetas por fila */
+  }
+}
+
+.card {
+  background: #111111; /* negro oscuro */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  color: #f9fafb;
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #d1d5db;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* ======== BOTÓN VER EN MAPA ======== */
+.card button {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 1rem;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(59,130,246,0.3);
+}
+
+.card button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(59,130,246,0.5);
+}
+
+.card button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 3px 6px rgba(59,130,246,0.3);
+}
+
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 900px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .curiosidades-container { padding: 2rem 1.5rem; }
+  .cards { gap: 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.3rem; }
+  .curiosidades-container { padding: 1.2rem; }
+  .cards { gap: 1rem; }
+}
+
+.curiosidades {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.curiosidades h2 {
+  color: #00e5ff;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.curiosidades-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curiosidades-lista li {
+  position: relative;
+  padding: 14px 18px 14px 34px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 15.5px;
+  color: #e0e0e0;
+}
+
+/* Punto visual discreto */
+.curiosidades-lista li::before {
+  content: "•";
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  color: #00e5ff;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto 18px auto;
+  padding: 18px 22px;
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: #e6e6e6;
+  background: linear-gradient(
+    to right,
+    rgba(0, 188, 212, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-left: 4px solid #00e5ff;
+  border-radius: 12px;
+}
+
+.intro.secundario {
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid rgba(0, 229, 255, 0.6);
+}
+
+/* Resaltado sutil */
+.resaltado {
+  color: #00e5ff;
+  font-weight: 500;
+}

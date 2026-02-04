@@ -1,0 +1,155 @@
+<div class="detail-panel" *ngIf="meteorito">
+  <!-- ✖ Botón cerrar -->
+  <button class="close-btn" (click)="close()">✖</button>
+  <!-- 🌠 Nombre -->
+  <h2 class="meteorito-name">{{ meteorito.name }}</h2>
+
+  <!-- 📸 Galería -->
+  <ng-container *ngIf="(fotosParsed?.length ?? 0) > 0; else sinFotos">
+    <div class="media-section">
+      <h3>Galería</h3>
+      <div class="gallery-container">
+        <div class="gallery-track" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+          <div class="gallery-slide" *ngFor="let foto of fotosParsed">
+            <img [src]="foto.link" alt="Foto del meteorito" (error)="setDefaultImage($event)" (click)="openFullscreen(foto.link)" class="clickeable-img" />
+            <div class="foto-info">
+              <p><strong>Autor:</strong> {{ foto.autor || 'Desconocido' }}</p>
+              <p><strong>Origen:</strong> {{ foto.referencia || 'N/A' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-controls" *ngIf="fotosParsed.length > 1">
+        <button (click)="prevSlide()" [disabled]="currentIndex === 0">←</button>
+        <span>{{ currentIndex + 1 }} / {{ fotosParsed.length }}</span>
+        <button (click)="nextSlide()" [disabled]="currentIndex === fotosParsed.length - 1">→</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #sinFotos>
+    <p class="texto-vacio">📷 No hay fotos disponibles.</p>
+  </ng-template>
+
+  <!-- 📄 Información general -->
+  <div class="info-general section-block">
+    <h3>Información General</h3>
+    <p *ngIf="meteorito.mass || meteorito.dataMB109_Mass">
+      <strong>Peso:</strong> {{ meteorito.mass || meteorito.dataMB109_Mass }} g
+    </p>
+
+    <p *ngIf="meteorito.year"><strong>Año:</strong> {{ meteorito.year }}</p>
+    <p *ngIf="meteorito.place"><strong>Lugar:</strong> {{ meteorito.place }}</p>
+    <p *ngIf="meteorito.country"><strong>País:</strong> {{ meteorito.country }}</p>
+
+    <div *ngIf="mostrarTipo()" class="tipo-section section-block">
+      <h3>Clasificación</h3>
+      <p><strong>Clase:</strong> {{ this.tipoInfo.tipoNormalizado}}</p>
+      <p><strong>Tipo:</strong> {{ meteorito.classification || meteorito.dataMB109_Class }}</p>
+
+      <img [src]="this.tipoInfo.imagen" alt="Tipo de meteorito"  (click)="openFullscreen(this.tipoInfo.imagen)" class="clickeable-img"
+        class="main-photo" />
+
+      <p class="descripcion-tipo">{{ tipoInfo.descripcion }}</p>
+    </div>
+  </div>
+
+  <!-- 🌀 Altura -->
+  <div class="trayectoria-section section-block" *ngIf="meteorito.mass">
+    <h3>Altura</h3>
+    <div class="apartado-link" (click)="irAltura()">
+      <img src="assets/icons/rule.svg" alt="Rule" width="24" height="24">
+      <div class="apartado-texto">
+        <h4>Ver la altura</h4>
+        <p>Mira una comparación de una aproximado de la altura con respecto a otros objetos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚗️ Masa y composición -->
+  <div class="composicion-section section-block"
+    *ngIf="meteorito.mass || meteorito.dataMB109_Fayalite || meteorito.dataMB109_Ferrosilite">
+    <h3>Masa y Composición</h3>
+
+    <div class="grid-comp">
+      <div class="comp-card" *ngIf="meteorito.mass">
+        <span class="label">Masa total:  </span>
+        <span class="value">{{ meteorito.mass }} g</span>
+      </div>
+      <div class="apartado-link" (click)="irAVsPeso()">
+        <img src="assets/icons/scale.svg" alt="Scale" width="24" height="24">
+        <div class="apartado-texto">
+          <h4> Comparación de masa</h4>
+          <p>Explora cuán pesado es este meteorito frente a objetos cotidianos.</p>
+        </div>
+      </div>
+      <div class="comp-card" *ngIf="meteorito.dataMB109_Weathering">
+        <span class="label">Meteorización</span>
+        <span class="value">{{ meteorito.dataMB109_Weathering }}</span>
+      </div>
+      <div class="comp-card" *ngIf="meteorito.dataMB109_Fayalite">
+        <span class="label">Fayalita (Fe₂SiO₄)</span>
+        <span class="value">{{ meteorito.dataMB109_Fayalite }}</span>
+      </div>
+      <div class="comp-card" *ngIf="meteorito.dataMB109_Ferrosilite">
+        <span class="label">Ferrosilita (FeSiO₃)</span>
+        <span class="value">{{ meteorito.dataMB109_Ferrosilite }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🚀 Trayectoria -->
+  <div class="impacto-section section-block"
+    *ngIf="meteorito.ia_velocidad || meteorito.impact_vel || meteorito.ia_energia || meteorito.impact_energy || meteorito.ia_impacto ">
+    <h3>Impacto y Velocidad</h3>
+    <p><strong>Velocidad:</strong> {{ meteorito.ia_velocidad || meteorito.impact_vel || 'Desconocida' }}</p>
+    <p><strong>Energía:</strong> {{ meteorito.ia_energia || meteorito.impact_energy || 'Sin datos' }}</p>
+    <p><strong>Altura:</strong> {{ meteorito.impact_alt || 'No se Tubo altura registrada' }}</p>
+    <p><strong>Repercusión:</strong> {{ meteorito.ia_impacto || 'No hubo gran repercusión.' }}</p>
+
+    <div class="apartado-link" (click)="irAVsTrayectoria()">
+      <img src="assets/icons/trayectory.svg" alt="Bomb" width="24" height="24">
+      <div class="apartado-texto">
+        <h4>Simulación de Trayectoria</h4>
+        <p>Mira la ruta aproximada que siguió el meteoirot en la atmósfera.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔗 Enlaces -->
+  <div class="links-section section-block" *ngIf="meteorito.ia_links || meteorito.ia_videos || meteorito.ia_fotos">
+    <h3>Recursos y Enlaces</h3>
+    <div class="links-container">
+      <a *ngIf="meteorito.ia_links" [href]="meteorito.ia_links" target="_blank" class="link-card">
+        Fuente principal
+      </a>
+      <a *ngIf="meteorito.ia_fotos" [href]="meteorito.ia_fotos" target="_blank" class="link-card">
+        Galería externa
+      </a>
+      <a *ngIf="meteorito.ia_videos" [href]="meteorito.ia_videos" target="_blank" class="link-card">
+        Video relacionado
+      </a>
+    </div>
+  </div>
+
+  <div class="trayectoria-section section-block" *ngIf="mostrarFoto">
+  <h3>Ubicación de caída</h3>
+  <app-location-viewer
+      [meteorito]="meteorito"
+      (sinImagen)="onSinImagen($event)">
+  </app-location-viewer>
+</div>
+
+
+  <!-- 📖 Historia -->
+  <div class="historia-section section-block" *ngIf="meteorito.ia_historia">
+    <h3>Historia</h3>
+    <p>{{ meteorito.ia_historia || 'Se desconoce el origen de este meteorito.' }}</p>
+  </div>
+
+  <!-- 🛰️ Descubrimiento -->
+  <div class="descubrimiento-section section-block" *ngIf="meteorito.ia_descubrimiento">
+    <h3>Descubrimiento</h3>
+    <p>{{ meteorito.ia_descubrimiento }}</p>
+  </div>
+</div>

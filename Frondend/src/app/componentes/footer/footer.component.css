@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(8, 10, 14, 0.9);
+  color: #cfd6e3;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  z-index: 1500;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Izquierda: nombre y descripción */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.brand {
+  font-weight: 600;
+  color: #eaf0fb;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.small-desc {
+  color: rgba(205, 213, 224, 0.7);
+  font-size: 0.78rem;
+}
+
+/* Centro: links */
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.f-link {
+  color: #cfd6e3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.f-link:hover {
+  background: rgba(143, 199, 255, 0.07);
+  color: #9ecbff;
+}
+
+/* Derecha: redes sociales */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: flex-end;
+  color: rgba(205, 213, 224, 0.85);
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  color: #cfd6e3;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.icon:hover {
+  background: rgba(143, 199, 255, 0.1);
+  color: #9ecbff;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .footer-nav {
+    order: 3;
+  }
+
+  .footer-right {
+    order: 2;
+  }
+
+  .footer-left {
+    order: 1;
+  }
+}

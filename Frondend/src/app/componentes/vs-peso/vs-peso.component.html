@@ -1,0 +1,46 @@
+<div class="main-container">
+
+  <!-- Animación principal -->
+  <div class="animation-container">
+    <!-- Texto explicativo arriba -->
+    <div class="animation-info">
+      <h3 class="animation-title">Simulación de Objetos</h3>
+      <p>
+        Observa cómo diferentes objetos afectan el comportamiento de la simulación.
+        Selecciona un objeto en el panel lateral para ver su peso y equivalencia al peso real del meteorito,
+        es decir lo que equivale el meteorito a ese objeto en peso
+      </p>
+    </div>
+
+    <!-- Canvas de animación -->
+    <div #canvasContainer class="canvas"></div>
+    <p *ngIf="limitado" class="limit-warning">
+      Visualización limitada a <strong>1000 objetos</strong> por rendimiento.
+    </p>
+
+  </div>
+
+  <!-- Panel lateral -->
+  <div class="side-panel">
+    <!-- Opciones de objetos -->
+    <div class="options-panel">
+      <h3>Selecciona un objeto</h3>
+      <div class="options">
+        <div *ngFor="let obj of objectsList" [class.selected]="currentObject.name === obj.name"
+          (click)="onObjectChange(obj.name)">
+
+          {{ obj.name }} (Peso: {{ formatWeight(obj.weight) }})
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel de datos -->
+    <div class="data-panel">
+      <p>Peso total del meteorito: <span>{{ pesoTotal }} gr</span></p>
+      <p>Peso del objeto: <span>{{ currentObject.weight }} gr</span></p>
+      <p>Equivale a: <span>{{ equivalencia }} {{ currentObject.name }}(s)</span></p>
+    </div>
+
+  </div>
+</div>

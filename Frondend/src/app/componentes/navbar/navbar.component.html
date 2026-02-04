@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Nombre Meteora a la izquierda -->
+    <div class="brand" routerLink="/"><img src="assets/icons/rocket.svg" alt="Rocket" class="icon"> Meteora</div>
+
+    <!-- Enlaces a la derecha -->
+    <ul class="nav-links">
+      <li>
+        <a
+          routerLink="/inicio"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Inicio</a
+        >
+      </li>
+      <li>
+        <a routerLink="/mapa" routerLinkActive="active">Mapa</a>
+      </li>
+      <li>
+        <a routerLink="/origen" routerLinkActive="active">Origen</a>
+      </li>
+      <li>
+        <a routerLink="/curiosidades" routerLinkActive="active">Curiosidades</a>
+      </li>
+    </ul>
+  </div>
+</nav>

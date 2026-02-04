@@ -1,0 +1,57 @@
+<div class="main-container">
+
+  <!-- Columna izquierda: Animación -->
+  <div class="animation-left">
+    <div class="explicacion-altura">
+      <h2>Comparador de Altura</h2>
+      <p>
+        Este componente te permite visualizar la altura del meteorito comparada con diferentes objetos
+        cotidianos. Usa las flechas para mover la vista lateralmente y observar las proporciones.
+      </p>
+    </div>
+
+    <!-- Canvas / SVG de animación -->
+    <div class="animation-box">
+      <svg width="100%" height="100%" class="svg-escenario">
+        <!-- Líneas de referencia -->
+        <g *ngFor="let n of lineasReferencia">
+          <line x1="0" x2="100%" [attr.y1]="pisoY - escala(n)" [attr.y2]="pisoY - escala(n)"
+                stroke="#aaa" stroke-dasharray="4 2"></line>
+          <text x="5" [attr.y]="pisoY - escala(n) - 2" font-size="10" fill="#333">{{n}} m</text>
+        </g>
+
+        <!-- Piso -->
+        <rect x="0" [attr.y]="pisoY" width="100%" height="5" fill="#8B5E3C" rx="2"></rect>
+
+        <!-- Objetos -->
+        <g *ngFor="let obj of objetos; let i = index">
+          <g *ngIf="obj.visible" [attr.id]="'group-' + i" [attr.transform]="'translate(' + obj.x + ',0)'">
+            <image [attr.id]="'img-' + i" [attr.href]="obj.img"
+                   [attr.width]="escala(obj.tamano)" [attr.height]="escala(obj.tamano)"
+                   [attr.x]="-escala(obj.tamano)/2" [attr.y]="pisoY - escala(obj.tamano)"
+                   [style.opacity]="obj.visible ? 1 : 0"></image>
+            <text x="0" [attr.y]="pisoY + 20" text-anchor="middle" class="objeto-text">
+              {{obj.nombre}} ({{obj.tamano}} m)
+            </text>
+          </g>
+        </g>
+      </svg>
+
+      <!-- Controles debajo -->
+      <div class="controles">
+        <button class="control-btn" (click)="mover('izquierda')">⬅️</button>
+        <button class="control-btn" (click)="mover('derecha')">➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Columna derecha: Panel de detalles -->
+  <div class="detail-right">
+    <h3>Objetos Disponibles</h3>
+    <div *ngFor="let obj of objetos" [class.visible]="obj.visible" class="item-objeto">
+      <span>{{obj.nombre}}</span>
+      <span>{{obj.tamano}} m</span>
+    </div>
+  </div>
+
+</div>

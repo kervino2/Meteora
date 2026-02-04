@@ -1,0 +1,38 @@
+.meteorito-photo {
+  text-align: center;
+  padding: 1rem;
+}
+
+.photo {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+  margin-top: 1rem;
+}
+
+.controls {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  background: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.clickeable-img {
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+
+.clickeable-img:hover {
+  transform: scale(1.03);
+}

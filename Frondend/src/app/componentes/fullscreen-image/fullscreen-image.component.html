@@ -1,0 +1,9 @@
+<div 
+  class="overlay" 
+  *ngIf="(fullscreenSrv.currentImage$ | async) as img"
+  (click)="close()">
+
+  <img class="fullscreen-img" [src]="img" (click)="$event.stopPropagation()" />
+
+  <button class="close-btn" (click)="close()">&times;</button>
+</div>

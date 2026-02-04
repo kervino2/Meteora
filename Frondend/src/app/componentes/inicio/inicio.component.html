@@ -1,0 +1,88 @@
+<div class="inicio-container">
+
+  <!-- Introducción -->
+  <section class="intro dark-section center-content">
+    <h1>Introducción a <span class="highlight">Meteora</span></h1>
+    <p>
+      <strong>Meteora</strong> es una aplicación web educativa que te permite
+      explorar el fascinante mundo de los meteoritos. A través de mapas
+      interactivos, podrás conocer los diferentes tipos, su origen, su impacto
+      en la Tierra y cómo la ciencia los estudia.
+    </p>
+
+    <p>
+      Actualmente, la aplicación cuenta con
+      <strong>{{ totalRegistros }}</strong> registros de meteoritos de todo el mundo.
+    </p>
+
+    <p class="source">
+      Fuente: <a href="https://www.nasa.gov/" target="_blank">NASA</a> – Adaptado por el equipo de Meteora.
+    </p>
+  </section>
+
+  <!-- Glosario -->
+  <section class="glosario light-section">
+    <h2>Glosario de términos</h2>
+    <ul>
+      <li *ngFor="let item of glosario">
+        <strong>{{ item.termino }}:</strong> {{ item.descripcion }}
+      </li>
+    </ul>
+  </section>
+
+  <!-- Tipos de meteoritos -->
+  <section class="tipos dark-section">
+    <h2>Tipos importantes de meteoritos</h2>
+
+    <div class="carousel-container">
+      <button class="nav-btn" (click)="prev()">&#10094;</button>
+
+      <div class="carousel">
+        <div class="tipo-card" *ngFor="let tipo of tiposVisibles">
+          <img [src]="tipo.urlImage" alt="Imagen del tipo" />
+          <h3>{{ tipo.tituloMostrado }}</h3>
+          <p class="subtipo">{{ tipo.explicacion }}</p>
+        </div>
+      </div>
+
+      <button class="nav-btn" (click)="next()">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Funciones -->
+  <section class="funciones light-section center-content">
+    <h2>¿Qué puedes hacer en Meteora?</h2>
+    <ul>
+      <li *ngFor="let funcion of funciones">{{ funcion }}</li>
+    </ul>
+  </section>
+
+  <!-- Historia -->
+  <section class="historia dark-section">
+    <h2>Historia de los Meteoritos y su Importancia</h2>
+
+    <p>
+      Desde tiempos antiguos, los meteoritos han fascinado a la humanidad.
+      Civilizaciones como los egipcios y los mayas los consideraban mensajes de
+      los dioses, y algunos incluso los usaron para fabricar herramientas y
+      joyas, como el hierro meteórico hallado en tumbas faraónicas.
+    </p>
+
+    <p>
+      En la ciencia moderna, los meteoritos son claves para entender el origen
+      del Sistema Solar, pues conservan materiales primitivos formados hace más
+      de 4.500 millones de años. Al estudiarlos, los científicos descubren cómo
+      se formaron los planetas, incluida la Tierra, y cómo ciertos impactos
+      influyeron en la evolución de la vida, como el famoso meteorito que marcó
+      la extinción de los dinosaurios.
+    </p>
+
+    <p class="source">
+      Información basada en:
+      <a href="https://solarsystem.nasa.gov/resources/" target="_blank">NASA Solar System Exploration</a>
+      y
+      <a href="https://www.britannica.com" target="_blank">Encyclopedia Britannica</a>.
+    </p>
+  </section>
+
+</div>
