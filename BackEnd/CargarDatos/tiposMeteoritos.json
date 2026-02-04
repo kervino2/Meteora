@@ -1,0 +1,605 @@
+[
+    {
+        "tipo": "H-Number",
+        "agrupado": [
+            "H",
+            "H3",
+            "H4",
+            "H5",
+            "H6",
+            "H7",
+            "H3.4",
+            "H4.5",
+            "H5.6",
+            "H6.7",
+            "H4.5",
+            "H5.6",
+            "H6.7"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Estas rocas tienen mucho hierro y níquel, por eso brillan como si tuvieran puntitos metálicos. Se formaron en asteroides que estuvieron más calientes, por lo que sus minerales están más ordenados. Son tan duras que a veces parecen pequeñas piezas de metal mezcladas con piedra."
+    },
+    {
+        "tipo": "L-Number",
+        "agrupado": [
+            "L",
+            "L3",
+            "L4",
+            "L5",
+            "L6",
+            "L7",
+            "L3.4",
+            "L4.5",
+            "L5.6",
+            "L6.7",
+            "L3.4",
+            "L4.5",
+            "L5.6",
+            "L3.2"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas L tienen menos hierro que las H, por eso son un poco más claras y menos metálicas. Aun así, muestran pequeñas bolitas llamadas cóndrulos, como perlitas del espacio, que cuentan cómo el polvo cósmico se derritió hace miles de millones de años."
+    },
+    {
+        "tipo": "LL-Number",
+        "agrupado": [
+            "LL",
+            "LL3",
+            "LL4",
+            "LL5",
+            "LL6",
+            "LL7",
+            "LL3-4",
+            "LL4-5",
+            "LL5-6",
+            "LL6-7"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas LL son las más pobres en hierro de las tres. Son rocas claras y con muchos cristales visibles. Como tienen poco metal, no son magnéticas. Nos enseñan cómo era el material rocoso en regiones del espacio donde había menos metales pesados."
+    },
+    {
+        "tipo": "Ordinary Chondrites",
+        "agrupado": [
+            "H-Number",
+            "L-Number",
+            "LL-Number"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Estas piedras son las más comunes que caen a la Tierra. Se llaman 'condritas ordinarias' y son como cápsulas del tiempo que guardan el polvo original del Sistema Solar. Su nombre cambia según cuánto hierro tienen: H (mucho), L (menos) y LL (muy poco)."
+    },
+    {
+        "tipo": "Mesosiderite",
+        "agrupado": [
+            "Mesosiderite",
+            "Mesosiderite-A",
+            "Mesosiderite-B",
+            "Mesosiderite-C"
+        ],
+        "urlImage": "https://www.arizonaskiesmeteorites.com/AZ_Skies_Links/Meteorite_Photos/Stony_Irons/Mesosiderites/Metal_Rich_Mesosiderite2.jpg",
+        "explicacion": "Estas piedras son mezclas increíbles de metal y roca. Se formaron cuando asteroides rocosos chocaron con otros metálicos, fundiendo sus materiales. Si las cortas, verás trozos plateados de hierro junto a cristales coloridos, como una torta de mármol espacial. Por eso tienen colores mas llamativos"
+    },
+    {
+        "tipo": "Pallasite",
+        "agrupado": [
+            "Pallasite",
+            "Pallasite, PES",
+            "Pallasite, PMG",
+            "Pallasite, PMG-an"
+        ],
+        "urlImage": "https://www.fossilera.com/p/1162/brahin.jpg",
+        "explicacion": "Son de las rocas más bonitas del espacio. Están hechas de hierro brillante con cristales verdes de olivino (la misma piedra que hay en algunos collares). Se formaron en la frontera entre el núcleo y el manto de antiguos asteroides, como si fueran joyas de su interior."
+    },
+    {
+        "tipo": "Metal-Rock Hybrids",
+        "agrupado": [
+            "Pallasite",
+            "Mesosiderite"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/8/86/TolucaMeteorite.jpg",
+        "explicacion": "Estas piedras son mitad metal y mitad roca. Muestran cómo los asteroides se derritieron y mezclaron sus capas, como si la Tierra se partiera y se mezclara su centro con sus montañas. Son hermosas, raras y muy buscadas por los coleccionistas."
+    },
+    {
+        "tipo": "Ureilite",
+        "agrupado": [
+            "Ureilite",
+            "Ureilite-an",
+            "Ureilite-pmict"
+        ],
+        "urlImage": "data:image/jpeg;base64,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",
+        "explicacion": "Las ureilitas son rocas oscuras llenas de pequeños cristales y, en algunos casos, diminutos diamantes formados por la presión del impacto. Son como rocas del espacio con brillo propio, resultado de explosiones y choques violentos entre asteroides."
+    },
+    {
+        "tipo": "Winonaite",
+        "agrupado": [
+            "Winonaite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sFzwxIWrJdWk93O8sZgNGR7NhAa2qY9xwQ6YQVIAeEjpaH4sJY6nXSlNh0UK-bO8xybmZ6Dg8tRJB_LoocIVsYtk9OolNnGV6maTm4Vl8A&s=10",
+        "explicacion": "Estas rocas parecen una mezcla entre condritas y piedras fundidas. Tienen minerales muy antiguos que se calentaron pero no se derritieron completamente. Son un ejemplo de cómo los asteroides cambiaron poco a poco sin llegar a convertirse en metal o lava."
+    },
+    {
+        "tipo": "Rare & Mixed Stones",
+        "agrupado": [
+            "Ureilite",
+            "Winonaite",
+            "Stone-uncl",
+            "Stone-ung"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sFzwxIWrJdWk93O8sZgNGR7NhAa2qY9xwQ6YQVIAeEjpaH4sJY6nXSlNh0UK-bO8xybmZ6Dg8tRJB_LoocIVsYtk9OolNnGV6maTm4Vl8A&s=10",
+        "explicacion": "Este grupo reúne las piedras más raras y difíciles de clasificar. Algunas son fragmentos mezclados de distintos mundos, otras se formaron por impactos tan fuertes que cambiaron su estructura. Son como las piezas únicas del museo del espacio."
+    },
+    {
+        "tipo": "C1",
+        "agrupado": [
+            "C1",
+            "C1/2"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C1 son meteoritos muy antiguos formados casi al mismo tiempo que el Sol. Son como rocas suaves y oscuras que contienen agua y compuestos orgánicos. Se llaman 'carbonáceas' porque tienen mucho carbono, algo muy importante para la vida."
+    },
+    {
+        "tipo": "C2",
+        "agrupado": [
+            "C2",
+            "C2/3"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C2 son parecidas a las C1, pero han pasado por un poco más de calor. Esto las hace más duras y con menos agua, aunque todavía conservan muchos compuestos del espacio original."
+    },
+    {
+        "tipo": "C3",
+        "agrupado": [
+            "C3",
+            "C3/4"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C3 son rocas espaciales que ya muestran cristales brillantes llamados condros. Son más secas y duras que las C1 o C2, lo que indica que su material se calentó más dentro de su asteroide."
+    },
+    {
+        "tipo": "C4",
+        "agrupado": [
+            "C4",
+            "C4/5"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C4 muestran signos de calentamiento moderado. Son como rocas que estuvieron en un horno medio: ni muy frías ni muy calientes. Han perdido parte de sus compuestos volátiles pero aún conservan su origen primitivo."
+    },
+    {
+        "tipo": "C5",
+        "agrupado": [
+            "C5",
+            "C5/6"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C5 son rocas que sufrieron más calor dentro de su asteroide. Sus minerales están más ordenados y brillan más al microscopio, lo que muestra un metamorfismo térmico alto."
+    },
+    {
+        "tipo": "C6",
+        "agrupado": [
+            "C6"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas C6 son las más transformadas por el calor. Ya casi parecen rocas comunes, pero su composición aún guarda la historia de los primeros materiales del sistema solar."
+    },
+    {
+        "tipo": "C-Number",
+        "agrupado": [
+            "C",
+            "C1",
+            "C1/2",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C2-ung",
+            "C3-ung",
+            "C3.0-ung",
+            "C3/4-ung",
+            "C4-ung",
+            "C4/5",
+            "C5/6-ung"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las condritas carbonáceas son piedras espaciales que conservan los materiales más antiguos del Sistema Solar. Algunas contienen agua y compuestos con carbono, los mismos elementos que ayudaron a formar la vida. Las de número bajo son más frías y primitivas; las de número alto pasaron más calor y cambiaron por dentro."
+    },
+    {
+        "tipo": "CI",
+        "agrupado": [
+            "CI1"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Weston_meteorite.jpg/250px-Weston_meteorite.jpg",
+        "explicacion": "Las CI son piedras muy oscuras y blandas, casi como carbón. Tienen mucha agua y compuestos orgánicos. Son tan frágiles que se deshacen fácilmente con el tacto. Representan materiales muy parecidos a los que formaron los planetas hace más de 4.500 millones de años."
+    },
+    {
+        "tipo": "CK",
+        "agrupado": [
+            "CK",
+            "CK3",
+            "CK3-an",
+            "CK3.8",
+            "CK3/4",
+            "CK4",
+            "CK4-an",
+            "CK4/5",
+            "CK5",
+            "CK5/6",
+            "CK6"
+        ],
+        "urlImage": "https://www.picclickimg.com/06oAAOSw0q1lsLbP/Meteorito-Nwa-16387-De-1008-G-Condrita.webp",
+        "explicacion": "Las CK son piedras que alguna vez estuvieron muy calientes dentro de su asteroide. Por eso tienen minerales oscuros y brillantes. Su color negro se debe a que casi todo su carbono se transformó en minerales sólidos. Son como piedras cocidas en el horno del espacio."
+    },
+    {
+        "tipo": "CM",
+        "agrupado": [
+            "CM",
+            "CM-an",
+            "CM1",
+            "CM1/2",
+            "CM2",
+            "CM2-an"
+        ],
+        "urlImage": "https://www.picclickimg.com/06oAAOSw0q1lsLbP/Meteorito-Nwa-16387-De-1008-G-Condrita.webp",
+        "explicacion": "Las CM son rocas llenas de materiales que alguna vez estuvieron en contacto con agua. Algunas contienen aminoácidos, las moléculas que forman las proteínas. Se formaron en asteroides donde el hielo se derritió y transformó los minerales, como si hubiera llovido adentro."
+    },
+    {
+        "tipo": "CO",
+        "agrupado": [
+            "CO3",
+            "CO3.0",
+            "CO3.1",
+            "CO3.2",
+            "CO3.3",
+            "CO3.4",
+            "CO3.5",
+            "CO3.6",
+            "CO3.7",
+            "CO3.8"
+        ],
+        "urlImage": "https://www.picclickimg.com/06oAAOSw0q1lsLbP/Meteorito-Nwa-16387-De-1008-G-Condrita.webp",
+        "explicacion": "Estas piedras tienen muchas bolitas brillantes llamadas cóndrulos, formadas cuando el polvo del espacio se derritió brevemente. Los números muestran cuánto calor recibieron: las de 3.0 casi no cambiaron, y las de 3.8 se calentaron más y perdieron parte de su agua."
+    },
+    {
+        "tipo": "CR",
+        "agrupado": [
+            "CR",
+            "CR-an",
+            "CR1",
+            "CR2",
+            "CR2-an",
+            "CR7"
+        ],
+        "urlImage": "https://www.picclickimg.com/06oAAOSw0q1lsLbP/Meteorito-Nwa-16387-De-1008-G-Condrita.webp",
+        "explicacion": "Las CR son rocas metálicas con mucho hierro y níquel. A veces tienen rastros de agua congelada. Son muy antiguas y representan el material que quedó cuando los planetas grandes ya se habían formado."
+    },
+    {
+        "tipo": "CV",
+        "agrupado": [
+            "CV2",
+            "CV3",
+            "CV3-an"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/NWA869Meteorite.jpg",
+        "explicacion": "Las CV son famosas porque algunas, como la Allende, cayeron con millones de pequeñas esferas y granos de calcio y aluminio, los primeros sólidos que se formaron alrededor del Sol. Son como cápsulas del tiempo del nacimiento del Sistema Solar."
+    },
+    {
+        "tipo": "E-Number",
+        "agrupado": [
+            "E",
+            "E-an",
+            "E3",
+            "E3-an",
+            "E4",
+            "E5",
+            "E5-an",
+            "E6"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsCWEK-cH4i5wIq3-Wnfry6Ugp1Cpzic9yOzwlWl5wCVADcLcK_jn73NR9eE6yDYO7k18I8MTRfvUSWd8LzCdlNxGHbBCpQwGY60q0lj39OQ&s=10",
+        "explicacion": "Estas piedras, llamadas enstatitas, se formaron en regiones muy secas y calientes del Sistema Solar. Tienen minerales que se derriten fácilmente pero sin agua. Si las miras, parecen brillantes y claras, como si fueran cuarzo del espacio."
+    },
+    {
+        "tipo": "Acapulcoite/Lodranite",
+        "agrupado": [
+            "Acapulcoite",
+            "Lodranite",
+            "Acapulcoite/Lodranite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQO_GYBfP9lYT49eZr0LODIyKMjNd8e8aoOD5B-rOXtbCJXhh6RCupy6RipCJRacLPmmTMTc0PMu6N1fR5h9N4AjFRuOfTyIor8cmKcDDU&s=10",
+        "explicacion": "Estas piedras se formaron en el interior caliente de asteroides. La acapulcoita tiene granos más finos, mientras que la lodranita parece una versión más cocida. Ambas cuentan la historia de cómo los pequeños mundos del espacio se derritieron por dentro."
+    },
+    {
+        "tipo": "Angrite",
+        "agrupado": [
+            "Angrite"
+        ],
+        "urlImage": "data:image/webp;base64,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",
+        "explicacion": "Piedras oscuras y antiguas que se formaron cuando pequeños planetas tenían volcanes. Son de las rocas más viejas que existen, con más de 4.560 millones de años."
+    },
+    {
+        "tipo": "Aubrite",
+        "agrupado": [
+            "Aubrite",
+            "Aubrite-an"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KthUsI5_VkvLZt0GPyIaQDDp8c5kLoMqlvsY67NldvrT0U6aU2QtMM0aYNfLIjav4Wt3tLQyfIe5NNXg3jnBslAthuM08a6YmrqnTkPPoA&s=10",
+        "explicacion": "Rocas muy claras, casi blancas, compuestas por cristales de enstatita. Vienen de asteroides que casi no tenían agua ni hierro, por eso son tan brillantes."
+    },
+    {
+        "tipo": "Brachinite",
+        "agrupado": [
+            "Brachinite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKT_mS56nBqvKL-OJLU7NAhPQbGFtfrYnvUb5vV5bbPeix6fvCuERcjhDCAwPVDwM_5_Ni2imrkObO3Jdn8M3CUvU9LtPZo6rI8Ju2VcDD&s=10",
+        "explicacion": "Rocas verdes y cristalinas formadas principalmente por olivino. Se originaron dentro de asteroides donde el calor las transformó lentamente, sin llegar a fundirse completamente."
+    },
+    {
+        "tipo": "Diogenite",
+        "agrupado": [
+            "Diogenite",
+            "Diogenite-an",
+            "Diogenite-olivine",
+            "Diogenite-pm"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmoQqdjgCR3dZthsWX82iqM6y929aSUlMuVV-LVAFNnFdn69FB6fKDCsy-ABBY6dj_zduwWfeJpeL-UMfr95gNrgsbUgpILBKYrfdRnGA6Vw&s=10",
+        "explicacion": "Estas piedras se formaron muy profundo en un asteroide grande, tal vez Vesta. Son como rocas del manto del espacio, con cristales grandes de piroxeno y olivino."
+    },
+    {
+        "tipo": "Eucrite",
+        "agrupado": [
+            "Eucrite",
+            "Eucrite-an",
+            "Eucrite-br",
+            "Eucrite-cm",
+            "Eucrite-Mg rich",
+            "Eucrite-mmict",
+            "Eucrite-pmict",
+            "Eucrite-unbr"
+        ],
+        "urlImage": "data:image/jpeg;base64,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",
+        "explicacion": "Rocas que parecen basaltos, formadas por lava solidificada en la superficie de un asteroide. Algunas se mezclaron con fragmentos de otras, formando mosaicos de colores."
+    },
+    {
+        "tipo": "Howardite",
+        "agrupado": [
+            "Howardite",
+            "Howardite-an"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fGN6vrj5_hHH2J6jEVjaIDTRggbT7ONVmUqCSY5GfZBTplopXEtJQdbZtVof3QxVjUCQU8MYHt-GhgLNba4T57na-hKyjiyyFz_llTHR&s=10",
+        "explicacion": "Piedras compuestas de fragmentos de otras rocas espaciales. Son como mezclas de eucritas y diogenitas que se unieron después de impactos violentos en un mismo asteroide."
+    },
+    {
+        "tipo": "HED Group",
+        "agrupado": [
+            "Howardite",
+            "Eucrite",
+            "Diogenite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNaguJ4WeHfBfrV7rciTxKriC5k4CyocNlisecswJXCiUWnXz9PuLMP1G9OdVO5IxRZtp_3KL0ttH8QOcNGAHwmfkMWATB5bwXgeBs7Q&s=10",
+        "explicacion": "Este grupo reúne tres tipos de piedras (howarditas, eucritas y diogenitas) que probablemente provienen del mismo asteroide: Vesta. Son los restos de volcanes y capas internas de ese mundo pequeño."
+    },
+    {
+        "tipo": "Enstatite Achondrite",
+        "agrupado": [
+            "Enst achon",
+            "Enst achon-ung"
+        ],
+        "urlImage": "https://meteoritegallery.com/wp-content/uploads/2014/02/DSCN5459.jpg",
+        "explicacion": "Rocas secas del espacio, con mucho mineral enstatita. Se formaron en lugares sin agua ni oxígeno, y son tan raras que se parecen más a minerales de un horno que a piedras normales."
+    },
+    {
+        "tipo": "E-H Chondrites Transition",
+        "agrupado": [
+            "EH",
+            "EH3",
+            "EH4",
+            "EH5",
+            "EH6",
+            "EH7",
+            "EH-an"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnYe11ba3Y1Yao7UmKB31NtUKQazKvnFI6AMBaE65JWW3_cnNhQN_B-4rhad-aB1FPNyM05_QYu0YG8NzVr2vAYytrcBwfi1LGKQalg73mQ&s=10",
+        "explicacion": "Rocas ricas en hierro metálico y silicio. Se formaron cerca del Sol, en zonas muy secas. Algunas son tan duras y brillantes que parecen fragmentos de metal con cristales incrustados."
+    },
+    {
+        "tipo": "Iron-IAB",
+        "agrupado": [
+            "IAB",
+            "IAB complex",
+            "IAB, MG",
+            "IAB, sHL",
+            "IAB, sHH",
+            "IAB, ung",
+            "IAB, an"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVmaFOiObhCdEu0SzUFbg9WU44xHSexuC-ZIBLAkOVuG7BmEj6BaBzvSFiN4dsFuUhEa8C6eye66Z4RiEXnjlhiGQfAkEPtR7ZdlF-Et1&s=10",
+        "explicacion": "Estos meteoritos están formados casi totalmente por hierro y níquel. Tienen patrones brillantes en forma de líneas que se cruzan, llamados figuras de Widmanstätten, que solo se forman al enfriar el metal muy lentamente en el espacio. Los del grupo IAB se mezclaron un poco con materiales rocosos, por eso son los más 'terrestres' dentro de los metálicos."
+    },
+    {
+        "tipo": "Iron-IIAB",
+        "agrupado": [
+            "IIAB",
+            "IIAB, an",
+            "IIAB, ung",
+            "Iron, IIAB"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVmaFOiObhCdEu0SzUFbg9WU44xHSexuC-ZIBLAkOVuG7BmEj6BaBzvSFiN4dsFuUhEa8C6eye66Z4RiEXnjlhiGQfAkEPtR7ZdlF-Et1&s=10",
+        "explicacion": "Los IIAB son más puros, casi todo hierro y níquel. Tienen una textura más fina, y a veces se ven como placas metálicas con un brillo plateado. Se formaron en las partes más internas de los asteroides, donde el calor fundió completamente el metal."
+    },
+    {
+        "tipo": "Iron-IIIAB",
+        "agrupado": [
+            "IIIAB",
+            "IIIAB, an",
+            "IIIAB, ung"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVmaFOiObhCdEu0SzUFbg9WU44xHSexuC-ZIBLAkOVuG7BmEj6BaBzvSFiN4dsFuUhEa8C6eye66Z4RiEXnjlhiGQfAkEPtR7ZdlF-Et1&s=10",
+        "explicacion": "Los IIIAB son meteoritos con patrones muy marcados. Cuando se pulen, muestran una especie de dibujo geométrico natural, una prueba de que se enfriaron lentamente durante millones de años dentro de un asteroide metálico."
+    },
+    {
+        "tipo": "Iron-IIICD",
+        "agrupado": [
+            "IIICD",
+            "IIICD, an",
+            "IIICD, ung"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlVmaFOiObhCdEu0SzUFbg9WU44xHSexuC-ZIBLAkOVuG7BmEj6BaBzvSFiN4dsFuUhEa8C6eye66Z4RiEXnjlhiGQfAkEPtR7ZdlF-Et1&s=10",
+        "explicacion": "Estos meteoritos tienen más fósforo y otros elementos mezclados con el hierro, lo que cambia sus colores y los hace menos brillantes. Son una ventana a los procesos químicos del interior de los asteroides metálicos más antiguos."
+    },
+    {
+        "tipo": "Iron-Number",
+        "agrupado": [
+            "IVB",
+            "IVB, an",
+            "IVB, ung",
+            "IAB",
+            "IIIAB",
+            "IIICD",
+            "IVB",
+            "IAB complex",
+            "IAB-MG",
+            "IAB-sHL",
+            "IAB-sHH",
+            "IAB-ung",
+            "IAB-an",
+            "IIAB-an",
+            "IIIAB-an",
+            "IIICD-an",
+            "IVB-an"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Goose_Lake_meteorite.jpg",
+        "explicacion": "Este grupo reúne todos los meteoritos metálicos. Son trozos del núcleo de antiguos asteroides que se partieron por colisiones. Su brillo, su peso y su estructura de líneas cruzadas los hacen únicos. Al tocarlos, es como tocar el metal más antiguo del Sistema Solar."
+    },
+    {
+        "tipo": "Ataxite",
+        "agrupado": [
+            "Ataxite",
+            "Iron, ataxite"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/7/71/ChingaMeteorite.jpg",
+        "explicacion": "Los ataxitas son meteoritos metálicos sin las líneas típicas. Tienen tanto níquel que su estructura es uniforme, como un espejo metálico del espacio. Son muy raros y extremadamente duros, como si fueran el acero perfecto del cosmos."
+    },
+    {
+        "tipo": "Octahedrite",
+        "agrupado": [
+            "Octahedrite",
+            "Iron, octahedrite",
+            "Coarse Octahedrite",
+            "Fine Octahedrite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQ2zDKkutZC_TC63jMhMkC7LChaRe3QzuJKoENEg-VTTBob7o3NKbW9lV--nwLIoVgC0JYq6QVY9Z7w-dxQuQAagA3hz-LpPbwpE4DP32fw&s=10",
+        "explicacion": "Las octaedritas son las más comunes dentro de los meteoritos metálicos. Se llaman así porque sus cristales forman ángulos de octaedro (como pirámides dobles). Cuando se cortan y pulen, muestran los bellos patrones geométricos metálicos que las hacen tan reconocibles."
+    },
+    {
+        "tipo": "Iron-General",
+        "agrupado": [
+            "Iron, IAB-MG",
+            "Iron, IIAB",
+            "Iron, IIIAB",
+            "Iron, IAB complex",
+            "Iron, IIICD",
+            "Iron, IVB",
+            "Ataxite",
+            "Octahedrite",
+            "Iron, IC"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQ2zDKkutZC_TC63jMhMkC7LChaRe3QzuJKoENEg-VTTBob7o3NKbW9lV--nwLIoVgC0JYq6QVY9Z7w-dxQuQAagA3hz-LpPbwpE4DP32fw&s=10",
+        "explicacion": "Los meteoritos metálicos son fragmentos del núcleo de asteroides antiguos. Se formaron cuando esos cuerpos se fundieron y el metal pesado se concentró en el centro. Al caer en la Tierra, parecen pedazos de hierro extraterrestre, testigos de los primeros metales del Sistema Solar."
+    },
+    {
+        "tipo": "HED",
+        "agrupado": [
+            "Howardite",
+            "Eucrite",
+            "Diogenite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fGN6vrj5_hHH2J6jEVjaIDTRggbT7ONVmUqCSY5GfZBTplopXEtJQdbZtVof3QxVjUCQU8MYHt-GhgLNba4T57na-hKyjiyyFz_llTHR&s=10",
+        "explicacion": "Estos tres tipos —Howardita, Eucrita y Diogenita— son como hermanos. Se cree que todos vienen del mismo lugar: el asteroide Vesta. Las Eucritas son rocas volcánicas que se formaron con lava, las Diogenitas se enfriaron más profundo, como las rocas del interior, y las Howarditas son mezclas de ambas, hechas por impactos. Son como distintas capas del mismo pequeño planeta."
+    },
+    {
+        "tipo": "Eucrite",
+        "agrupado": [
+            "Eucrite",
+            "Eucrite, polymict",
+            "Eucrite, monoclinic"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fGN6vrj5_hHH2J6jEVjaIDTRggbT7ONVmUqCSY5GfZBTplopXEtJQdbZtVof3QxVjUCQU8MYHt-GhgLNba4T57na-hKyjiyyFz_llTHR&s=10",
+        "explicacion": "Las Eucritas parecen piedras volcánicas terrestres, llenas de cristales pequeños. Se formaron cuando flujos de lava se enfriaron en la superficie del asteroide Vesta. Son pruebas de que ese mundo tuvo volcanes y calor interno, igual que los planetas."
+    },
+    {
+        "tipo": "Diogenite",
+        "agrupado": [
+            "Diogenite",
+            "Diogenite, breccia"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS77KqD46hqltj9OwwKHGO8s3cGdd_aBo36QdKMG6xDgpYbp7LI824m3hD_YUn13xTOmAggFTkvBrU7ZiRGQbZyxS066YfnLTAnWjWvOZL&s=10",
+        "explicacion": "Las Diogenitas se formaron más adentro del asteroide, donde la lava se enfrió lentamente, formando cristales grandes. Son como el 'manto' del pequeño planeta del que provienen. Tienen colores verdes o grises claros y un aspecto muy rocoso."
+    },
+    {
+        "tipo": "Howardite",
+        "agrupado": [
+            "Howardite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS77KqD46hqltj9OwwKHGO8s3cGdd_aBo36QdKMG6xDgpYbp7LI824m3hD_YUn13xTOmAggFTkvBrU7ZiRGQbZyxS066YfnLTAnWjWvOZL&s=10",
+        "explicacion": "Las Howarditas son mezclas de fragmentos de Eucritas y Diogenitas, unidas por impactos de meteoritos. Son como una ensalada espacial de rocas fundidas, que cuentan historias de colisiones antiguas en el cinturón de asteroides."
+    },
+    {
+        "tipo": "Angrite",
+        "agrupado": [
+            "Angrite"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/NWA_2999_meteorite%2C_angrite.jpg/1200px-NWA_2999_meteorite%2C_angrite.jpg",
+        "explicacion": "Los Angritas son de los meteoritos más viejos conocidos, casi tan antiguos como el Sistema Solar. Se formaron en cuerpos pequeños que se derritieron totalmente. Tienen colores verdes oscuros y una estructura cristalina muy bonita, como si fueran joyas espaciales."
+    },
+    {
+        "tipo": "Aubrite",
+        "agrupado": [
+            "Aubrite"
+        ],
+        "urlImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZEkoO2SNvg2Eg8Uemy07YCaESzxKMhIFuNSPbqmay94BIEJAx-xcyCEZA9-lD0bfxe3iLcfXsEbGfRhSXxI_9F8wQcRP6sxtNYjJrSaM&s=10",
+        "explicacion": "Las Aubritas son muy claras, casi blancas, formadas por minerales que se derritieron con poco oxígeno. Vienen de un cuerpo pequeño aún no identificado, y cuando caen parecen trozos de mármol extraterrestre."
+    },
+    {
+        "tipo": "Ureilite",
+        "agrupado": [
+            "Ureilite"
+        ],
+        "urlImage": "https://assets1.fossilera.com/sp/746031/ureilites/achondrite-meteorite-ureilite.jpg",
+        "explicacion": "Los Ureilitas son oscuros y contienen pequeños diamantes formados por la presión de impactos en el espacio. Son como carbón cósmico transformado en piedra preciosa. Su origen aún es un misterio, pero muestran que incluso los choques violentos pueden crear belleza."
+    },
+    {
+        "tipo": "Lunar",
+        "agrupado": [
+            "Lunar",
+            "Luna",
+            "Lunar-meteorite"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Allan_Hills_81005%2C_lunar_meteorite.jpg",
+        "explicacion": "Los meteoritos lunares provienen directamente de la Luna. Cuando un asteroide choca allá, lanza fragmentos que viajan hasta la Tierra. Son rocas iguales a las traídas por las misiones Apolo. Al tocarlas, es como tener un pedacito real de la Luna en las manos."
+    },
+    {
+        "tipo": "Martian",
+        "agrupado": [
+            "Martian",
+            "Shergottite",
+            "Nakhlite",
+            "Chassignite"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/e/ed/EETA79001_S80-37631.jpg",
+        "explicacion": "Los meteoritos marcianos vienen de Marte. Un impacto fuerte lanzó estas rocas al espacio y algunas llegaron hasta aquí. Los científicos los reconocen porque su aire atrapado dentro es igual al de la atmósfera marciana. Son mensajes geológicos de nuestro planeta vecino."
+    },
+    {
+        "tipo": "Achondrite",
+        "agrupado": [
+            "Achondrite",
+            "HED",
+            "Eucrite",
+            "Diogenite",
+            "Howardite",
+            "Angrite",
+            "Aubrite",
+            "Ureilite",
+            "Condrita carbonácea"
+        ],
+        "urlImage": "https://upload.wikimedia.org/wikipedia/commons/7/74/NWA869Meteorite.jpg",
+        "explicacion": "Las acondritas son meteoritos que alguna vez fueron parte de planetas o grandes asteroides con volcanes y calor interno. Ya no tienen condros porque se derritieron completamente. Al estudiarlas, los científicos descubren cómo se formaron los planetas rocosos, incluida la Tierra."
+    }
+]
